@@ -138,7 +138,7 @@ export default function Profil() {
 
       {/* Kepala & Pembantu Lingkungan */}
       <div className="w-full mt-10">
-        <h3 className="text-2xl font-extrabold text-gray-900 text-center mb-6">
+        <h3 className="text-2xl font-extrabold text-red-700 mb-10 text-center mb-6">
           KEPALA DAN PEMBANTU KEPALA LINGKUNGAN
         </h3>
 
