@@ -71,7 +71,7 @@ export default function Statistikpenduduk() {
       className="max-w-7xl mx-auto px-6 py-12 flex flex-col items-center"
     >
       <h2 className="text-3xl md:text-4xl font-extrabold text-red-700 mb-10 text-center drop-shadow-md">
-        STATISTIK PENDUDUK
+        STATISTIK PENDUDUK UNER SATU
       </h2>
 
       <motion.div

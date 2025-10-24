@@ -35,14 +35,14 @@ export default function Navbar() {
 
         <div className="hidden md:flex space-x-8 font-medium">
           <Link
-            href="#beranda"
+            href="/"
             className={`transition ${
               scrolled
                 ? "text-white hover:text-indigo-300"
                 : "text-gray-700 hover:text-indigo-500"
             }`}
           >
-            beranda
+            Beranda
           </Link>
           <Link
             href="#tentang"
