@@ -15,8 +15,13 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Uner Satu",
-  description: "Profil Desa Uner Satu",
+  description: "Website Desa Uner Satu",
+  other: {
+    "google-site-verification": "Z2otE_ZmHtYcDcEvcGXk6p5m1ngciR7pwXlNGjesTKo",
+  },
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
