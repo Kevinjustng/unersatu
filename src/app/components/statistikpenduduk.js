@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { Users, User, User2 } from "lucide-react"; // 👨 User = Male, 👩 User2 = Female
+import { Users, User, User2 } from "lucide-react";
 import { motion, useAnimation } from "framer-motion";
 
 export default function Statistikpenduduk() {
@@ -77,7 +77,7 @@ export default function Statistikpenduduk() {
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={controls}
-        className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full text-center"
+        className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full max-w-4xl text-center"
       >
         {stats.map((stat, index) => (
           <div
@@ -92,6 +92,12 @@ export default function Statistikpenduduk() {
           </div>
         ))}
       </motion.div>
+
+      {/* 📝 Note kecil di bawah statistik */}
+      <p className="text-gray-400 text-xs sm:text-sm mt-6 text-center max-w-md italic">
+        *Data ini merupakan hasil pendataan penduduk Kelurahan Uner Satu tahun 2025.
+        Informasi disajikan berdasarkan hasil rekapitulasi yang tersedia selama periode tersebut.
+      </p>
     </section>
   );
 }

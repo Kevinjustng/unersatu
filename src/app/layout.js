@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Uner Satu",
-  description: "Profil Uner Satu",
+  description: "Profil Desa Uner Satu",
 };
 
 export default function RootLayout({ children }) {
@@ -24,8 +24,15 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-800`}
       >
+        {/* Navbar selalu di atas dan responsif */}
         <Navbar />
-        {children}
+
+        {/* Konten utama dengan jarak antar section proporsional */}
+        <main className="flex flex-col w-full overflow-x-hidden">
+          {children}
+        </main>
+
+        {/* Footer */}
         <Footer />
       </body>
     </html>

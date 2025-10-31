@@ -12,78 +12,43 @@ export default function InfoCardSection() {
     {
       title: "Pasar Uner Satu",
       description:
-        "Merupakan tempat berdagang masyarakat, Serta mencari mata uang dan merupakan potensi dalam desa yang di adakan pada hari-hari tertentu.",
+        "Merupakan tempat berdagang masyarakat, serta mencari mata uang dan merupakan potensi dalam desa yang diadakan pada hari-hari tertentu.",
       image: "/images/pasar1.jpg",
       link: "/detail/pasar",
     },
     {
-      title: "Visi dan Misi",
+      title: "Pasar Blante",
       description:
         "Membangun masyarakat yang mandiri, sejahtera, dan berdaya saing dengan semangat gotong royong dan pelayanan publik yang unggul.",
-      image: "/images/visi.jpg",
-      link: "/detail/visi-misi",
+      image: "/images/blante1.jpeg",
+      link: "/detail/blante",
     },
     {
-      title: "Program dan Kegiatan",
+      title: "SD Katolik Santo Agustinus",
       description:
-        "Berbagai program pembangunan dan sosial dijalankan untuk meningkatkan kesejahteraan warga di Kelurahan Uner Satu.",
-      image: "/images/program.jpg",
-      link: "/detail/program",
+        "SD Katolik santo agustinus kawangkoan Membentuk generasi yang beriman, berkarakter, dan berprestasi melalui pendidikan  humanis, disiplin, serta berlandaskan nilai-nilai Katolik untuk mewujudkan masa depan yang cerdas dan berakhlak mulia.",
+      image: "/images/sekolah2.jpeg",
+      link: "/detail/sekolah",
     },
     {
-      title: "Pelayanan Publik",
+      title: "Coming Soon",
       description:
-        "Layanan publik yang efisien dan ramah untuk seluruh masyarakat.",
+        "-",
       image: "/images/pelayanan.jpg",
-      link: "/detail/pelayanan",
-    },
-    {
-      title: "Struktur Organisasi",
-      description:
-        "Struktur organisasi Kelurahan Uner Satu yang mendukung pelayanan publik.",
-      image: "/images/struktur.jpg",
-      link: "/detail/struktur",
-    },
-    {
-      title: "Kegiatan Sosial",
-      description:
-        "Kegiatan sosial dan kemasyarakatan yang mempererat hubungan antar warga.",
-      image: "/images/sosial.jpg",
-      link: "/detail/sosial",
-    },
-    {
-      title: "Infrastruktur",
-      description:
-        "Pembangunan infrastruktur untuk mendukung kemajuan wilayah.",
-      image: "/images/infrastruktur.jpg",
-      link: "/detail/infrastruktur",
-    },
-    {
-      title: "Ekonomi Kreatif",
-      description:
-        "Pengembangan ekonomi kreatif sebagai upaya pemberdayaan masyarakat.",
-      image: "/images/ekonomi.jpg",
-      link: "/detail/ekonomi",
-    },
-    {
-      title: "Lingkungan Hidup",
-      description:
-        "Program kebersihan dan pelestarian lingkungan di Kelurahan Uner Satu.",
-      image: "/images/lingkungan.jpg",
-      link: "/detail/lingkungan",
+      link: "/detail/kosong",
     },
   ];
 
   return (
     <section
       id="info"
-      className="max-w-7xl mx-auto px-6 py-16 flex flex-col items-center"
+      className="w-full flex flex-col items-center py-12 sm:py-16 px-3 sm:px-6"
     >
-      <h2 className="text-3xl md:text-4xl font-extrabold text-red-700 mb-10 text-center drop-shadow-md">
-        INFORMASI KELURAHAN
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-red-700 mb-8 sm:mb-12 text-center drop-shadow-md">
+        INFORMASI KELURAHAN UNER SATU
       </h2>
 
-      <div className="relative w-full">
+      <div className="relative w-full max-w-md sm:max-w-3xl md:max-w-5xl lg:max-w-7xl">
         <Swiper
           modules={[Navigation, Pagination]}
           navigation={{
@@ -94,56 +59,78 @@ export default function InfoCardSection() {
             clickable: true,
             el: ".swiper-pagination-custom",
           }}
-          spaceBetween={25}
+          spaceBetween={18}
           breakpoints={{
-            0: { slidesPerView: 1.1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            0: { slidesPerView: 1, spaceBetween: 15 },
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 25 },
           }}
-          className="pb-14"
+          className="pb-12 sm:pb-16"
         >
           {cards.map((card, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="flex justify-center">
               <Link
                 href={card.link}
-                className="group bg-white rounded-2xl shadow-md hover:shadow-2xl border-t-4 border-red-700 transition-all duration-300 overflow-hidden"
+                className="group w-[94%] sm:w-[95%] md:w-full bg-white rounded-2xl shadow-md hover:shadow-xl border-t-4 border-red-700 transition-all duration-300 overflow-hidden flex flex-col"
               >
-                <div className="relative w-full h-44 md:h-52 overflow-hidden">
+                {/* Image Section */}
+                <div className="relative w-full h-40 sm:h-48 md:h-56 lg:h-60 overflow-hidden">
                   <Image
                     src={card.image}
                     alt={card.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
+                  {/* Hover lighting overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
                 </div>
-                <div className="p-5">
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 group-hover:text-red-700 transition">
+
+                {/* Text Section */}
+                <div className="p-4 sm:p-5 flex flex-col justify-between flex-grow">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 group-hover:text-red-700 transition">
                     {card.title}
                   </h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    {card.description.length > 120
-                      ? card.description.substring(0, 120) + "..."
-                      : card.description}
-                  </p>
-                  <span className="text-red-700 font-semibold mt-3 inline-block group-hover:underline">
-                    Baca Selengkapnya →
-                  </span>
+
+                  {/* Mobile Only */}
+                  <div className="block sm:hidden mt-2">
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      {card.description.length > 100
+                        ? card.description.substring(0, 100) + "..."
+                        : card.description}
+                    </p>
+                    <span className="text-red-700 font-semibold mt-2 inline-block group-hover:underline text-sm">
+                      Baca Selengkapnya →
+                    </span>
+                  </div>
+
+                  {/* Desktop Only */}
+                  <div className="hidden sm:block mt-2">
+                    <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                      {card.description.length > 120
+                        ? card.description.substring(0, 120) + "..."
+                        : card.description}
+                    </p>
+                    <span className="text-red-700 font-semibold mt-2 inline-block group-hover:underline text-sm">
+                      Baca Selengkapnya →
+                    </span>
+                  </div>
                 </div>
               </Link>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        {/* ✨ Custom Nav Buttons - Clean & Floating */}
-        <div className="swiper-button-prev-custom absolute -left-10 top-1/2 -translate-y-1/2 z-10 bg-white/40 backdrop-blur-md text-red-700 border border-white/30 p-3 md:p-4 rounded-full shadow-md cursor-pointer hover:bg-white/70 hover:shadow-lg hover:scale-105 transition-all">
+        {/* Navigation Buttons */}
+        <div className="hidden md:flex swiper-button-prev-custom absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 backdrop-blur-md text-red-700 border border-red-200 p-3 rounded-full shadow-md cursor-pointer hover:bg-red-700 hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300">
           ❮
         </div>
-        <div className="swiper-button-next-custom absolute -right-10 top-1/2 -translate-y-1/2 z-10 bg-white/40 backdrop-blur-md text-red-700 border border-white/30 p-3 md:p-4 rounded-full shadow-md cursor-pointer hover:bg-white/70 hover:shadow-lg hover:scale-105 transition-all">
+        <div className="hidden md:flex swiper-button-next-custom absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 backdrop-blur-md text-red-700 border border-red-200 p-3 rounded-full shadow-md cursor-pointer hover:bg-red-700 hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300">
           ❯
         </div>
 
-        {/* Pagination Dots */}
-        <div className="swiper-pagination-custom mt-10 flex justify-center gap-3"></div>
+        {/* Pagination */}
+        <div className="swiper-pagination-custom mt-8 flex justify-center gap-3"></div>
       </div>
     </section>
   );

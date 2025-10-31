@@ -15,11 +15,11 @@ export default function Footer() {
         </div>
 
         {/* Right side: Text and links */}
-        <div className="flex flex-col md:flex-row md:items-center text-center md:text-right space-y-2 md:space-y-0 md:space-x-6">
+        <div className="flex flex-col md:flex-row md:items-center text-center md:text-right space-y-2 md:space-y-0 md:space-x-4 lg:space-x-6">
           <p className="text-sm md:text-base">
             © {new Date().getFullYear()} Pemerintah Uner Satu. Semua hak dilindungi.
           </p>
-          <div className="flex justify-center md:justify-end space-x-4">
+          <div className="flex justify-center md:justify-end space-x-3 md:space-x-4">
             <a href="#beranda" className="hover:text-indigo-400 text-sm md:text-base">beranda</a>
             <a href="#tentang" className="hover:text-indigo-400 text-sm md:text-base">tentang</a>
             <a href="#map-section" className="hover:text-indigo-400 text-sm md:text-base">lokasi</a>
