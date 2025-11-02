@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://unersatu.vercel.app/sitemap.xml
+Sitemap: https://unersatu.my.id/sitemap.xml

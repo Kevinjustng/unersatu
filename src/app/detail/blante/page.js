@@ -22,7 +22,7 @@ export default function PasarPage() {
   ];
 
   // Share link (can be reused)
-  const shareLink = "https://unersatu.vercel.app/detail/blante";
+  const shareLink = "https://unersatu.my.id/detail/blante";
 
   return (
     <>
