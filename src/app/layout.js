@@ -49,6 +49,11 @@ export const metadata = {
     description:
       "Informasi lengkap tentang Kelurahan Uner Satu, Kecamatan Kawangkoan, Kabupaten Minahasa.",
   },
+  icons: {
+    icon: "/images/kelurahan_unersatu.jpeg",       // 👈 tab logo (favicon)
+    shortcut: "/images/kelurahan_unersatu.jpeg",   // 👈 fallback shortcut
+    apple: "/images/kelurahan_unersatu.jpeg",      // 👈 iPhone/iPad icon
+  },
   other: {
     "google-site-verification": "Z2otE_ZmHtYcDcEvcGXk6p5m1ngciR7pwXlNGjesTKo",
   },

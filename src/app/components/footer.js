@@ -1,17 +1,28 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-4 mt-12">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         
-        {/* Left side: Logo placeholder */}
+        {/* Left side: Logo + site name */}
         <div className="flex items-center mb-4 md:mb-0">
-          <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center mr-3">
-            {/* Placeholder text/logo */}
-            <span className="text-white font-bold text-lg">LOGO</span>
+          {/* Logo image */}
+          <div className="w-12 h-12 relative rounded-full overflow-hidden mr-3 border border-gray-700 shadow-md">
+            <Image
+              src="/images/kelurahan_unersatu.jpeg"
+              alt="Logo Kelurahan Uner Satu"
+              fill
+              sizes="48px"
+              className="object-cover"
+              priority
+            />
           </div>
-          <span className="font-semibold text-white text-lg">Uner Satu</span>
+          <span className="font-semibold text-white text-lg">
+            Uner Satu
+          </span>
         </div>
 
         {/* Right side: Text and links */}
