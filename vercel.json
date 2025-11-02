@@ -12,8 +12,5 @@
         { "key": "Content-Type", "value": "text/plain" }
       ]
     }
-  ],
-  "redirects": [
-    { "source": "/(.*)", "destination": "https://www.unersatu.my.id/$1", "permanent": true }
   ]
 }
