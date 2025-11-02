@@ -55,7 +55,7 @@ export const metadata = {
     apple: "/images/kelurahan_unersatu.jpeg",      // 👈 iPhone/iPad icon
   },
   other: {
-    "google-site-verification": "Z2otE_ZmHtYcDcEvcGXk6p5m1ngciR7pwXlNGjesTKo",
+    "google-site-verification": "2MIZpUU4gV6BbpQ2MZuhOvY3iDzGFNxKT-oJHWEDFm8",
   },
 };
 
