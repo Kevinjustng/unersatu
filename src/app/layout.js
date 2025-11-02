@@ -14,14 +14,45 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Uner Satu",
-  description: "Website Desa Uner Satu",
+  title: {
+    default: "Uner Satu | Kelurahan Asri di Kecamatan Kawangkoan",
+    template: "%s | Uner Satu",
+  },
+  description:
+    "Uner Satu — Kelurahan yang asri dan penuh kehangatan di jantung Kecamatan Kawangkoan, Kabupaten Minahasa. Temukan informasi lengkap tentang Kelurahan Uner Satu di sini.",
+  keywords: [
+    "Uner Satu",
+    "Kelurahan Uner Satu",
+    "Kawangkoan",
+    "Minahasa",
+    "Informasi Kelurahan",
+  ],
+  authors: [{ name: "Kelurahan Uner Satu" }],
+  creator: "Kelurahan Uner Satu",
+  publisher: "Kelurahan Uner Satu",
+  metadataBase: new URL("https://unersatu.vercel.app"),
+  alternates: {
+    canonical: "https://unersatu.vercel.app",
+  },
+  openGraph: {
+    title: "Uner Satu | Kelurahan di Kecamatan Kawangkoan",
+    description:
+      "Kelurahan yang asri dan penuh kehangatan di jantung Kecamatan Kawangkoan, Kabupaten Minahasa.",
+    url: "https://unersatu.vercel.app",
+    siteName: "Uner Satu",
+    type: "website",
+    locale: "id_ID",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Uner Satu | Kelurahan di Kecamatan Kawangkoan",
+    description:
+      "Informasi lengkap tentang Kelurahan Uner Satu, Kecamatan Kawangkoan, Kabupaten Minahasa.",
+  },
   other: {
     "google-site-verification": "Z2otE_ZmHtYcDcEvcGXk6p5m1ngciR7pwXlNGjesTKo",
   },
 };
-
-
 
 export default function RootLayout({ children }) {
   return (
