@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function SekolahPage() {
   const shareLink =
-    "https://unersatu.my.id/detail/sd-katolik-santo-agustinus";
+    "https://www.unersatu.my.id/detail/sd-katolik-santo-agustinus";
   const [showModal, setShowModal] = useState(false);
   const [enlargedImage, setEnlargedImage] = useState(null);
 

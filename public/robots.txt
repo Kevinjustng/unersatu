@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://unersatu.my.id/sitemap.xml
+Sitemap: https://www.unersatu.my.id/sitemap.xml

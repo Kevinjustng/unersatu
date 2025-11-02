@@ -5,7 +5,7 @@ import DetailHero from "@/app/components/detailhero";
 import { useState, useEffect } from "react";
 
 export default function PasarPage() {
-  const shareLink = "https://unersatu.my.id/detail/pasar";
+  const shareLink = "https://www.unersatu.my.id/detail/pasar";
   const images = ["/images/pasar1.jpg", "/images/pasar2.jpeg"];
   const [currentImage, setCurrentImage] = useState(0);
 

@@ -30,15 +30,15 @@ export const metadata = {
   authors: [{ name: "Kelurahan Uner Satu" }],
   creator: "Kelurahan Uner Satu",
   publisher: "Kelurahan Uner Satu",
-  metadataBase: new URL("https://unersatu.my.id"),
+  metadataBase: new URL("https://www.unersatu.my.id"),
   alternates: {
-    canonical: "https://unersatu.my.id",
+    canonical: "https://www.unersatu.my.id",
   },
   openGraph: {
     title: "Uner Satu | Kelurahan di Kecamatan Kawangkoan",
     description:
       "Kelurahan yang asri dan penuh kehangatan di jantung Kecamatan Kawangkoan, Kabupaten Minahasa.",
-    url: "https://unersatu.my.id",
+    url: "https://www.unersatu.my.id",
     siteName: "Uner Satu",
     type: "website",
     locale: "id_ID",
