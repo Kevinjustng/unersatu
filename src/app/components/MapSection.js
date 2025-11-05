@@ -40,12 +40,10 @@ export default function MapSection() {
           </div>
 
           {/* Description */}
-          <p className="text-gray-800 text-sm md:text-lg leading-relaxed mt-5 mb-6 border-l-4 border-red-600 pl-4">
-            Kelurahan Uner Satu terletak di Kecamatan Kawangkoan, Kabupaten
-            Minahasa. Wilayah ini menjadi lokasi kegiatan KKT 144 selama 23 hari,
-            menghadirkan semangat gotong royong dan inovasi masyarakat lokal.
-          </p>
-
+<p className="text-gray-800 text-sm md:text-lg leading-relaxed mt-5 mb-6 border-l-4 border-red-600 pl-4">
+  Kantor Lurah Uner Satu menyelenggarakan fungsi pemerintahan, pembangunan, 
+  dan pelayanan masyarakat di wilayah Kecamatan Kawangkoan, Kabupaten Minahasa.
+</p>
           {/* Share Note */}
           <p className="text-gray-700/70 italic text-sm mb-2 select-none">
             💬 Bagikan lewat:

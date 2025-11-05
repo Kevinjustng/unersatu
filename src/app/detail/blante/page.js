@@ -21,7 +21,6 @@ export default function PasarPage() {
     { src: "/images/blante7.jpeg", desc: "Dokumentasi bersama Pala Lingkungan 1 dan warga setempat" },
   ];
 
-  // Share link (can be reused)
   const shareLink = "https://www.unersatu.my.id/detail/blante";
 
   return (
@@ -41,17 +40,73 @@ export default function PasarPage() {
           / Informasi / Pasar Uner Satu
         </div>
 
-        {/* History Section */}
-        <h2 className="text-xl sm:text-2xl font-bold text-red-700 mb-4">Sejarah</h2>
-        <p className="text-gray-700 leading-relaxed mb-10 text-sm sm:text-base">
-          Pasar Uner Satu dikenal sebagai satu-satunya “pasar blante” di wilayah
-          Sulawesi Utara yang berlokasi di Kelurahan Uner Satu. <br />
-          Berdasarkan studi strategi pengembangan pasar sapi/blante Kawangkoan,
-          pasar ini memiliki peranan penting sebagai pusat kegiatan ekonomi lokal
-          di Kecamatan Kawangkoan. <br />
-          Lokasi pasar ini berada di Kelurahan Uner Satu, Kecamatan Kawangkoan,
-          Kabupaten Minahasa.
-        </p>
+        {/* History Section - Improved Flow */}
+        <div className="bg-white/70 backdrop-blur-md border rounded-2xl shadow-lg p-6 mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-red-700 mb-6">Sejarah & Makna Pasar Blante</h2>
+          
+          <div className="space-y-6 text-gray-700 leading-relaxed text-sm sm:text-base">
+            <p>
+              Pasar Blante Uner Satu menyimpan warisan budaya yang kaya, dimana nama "Blante" sendiri 
+              berasal dari kata Belanda "balance" yang berarti seimbang. Konsep ini mencerminkan filosofi 
+              dasar pasar tradisional ini - sebuah sistem tukar-menukar yang mengutamakan keseimbangan 
+              dan keadilan bagi semua pihak yang terlibat dalam transaksi.
+            </p>
+
+            <p>
+              Sejak masa kolonial Belanda, pasar ini telah menjadi pusat kegiatan ekonomi yang vital 
+              bagi masyarakat Kawangkoan. Tradisi blante atau barter yang dipertahankan hingga kini 
+              bukan sekadar transaksi ekonomi, tetapi merupakan cerminan nilai-nilai kearifan lokal 
+              masyarakat Minahasa yang menjunjung tinggi kejujuran dan kepercayaan dalam setiap 
+              interaksi dagang.
+            </p>
+
+            <p>
+              Letaknya yang strategis di jantung Kawangkoan menjadikan Pasar Blante sebagai titik 
+              pertemuan antara peternak lokal dengan pembeli dari berbagai penjuru Sulawesi Utara. 
+              Keunikan sistem transaksinya yang mengandalkan tawar-menawar langsung dan diselesaikan 
+              dengan jabat tangan, menciptakan ikatan sosial yang kuat di antara para pelaku ekonomi.
+            </p>
+
+            <p>
+              Sebagai satu-satunya pasar hewan tradisional di Sulawesi Utara, Pasar Blante Uner Satu 
+              tidak hanya berperan sebagai pusat perdagangan ternak, tetapi juga menjadi penjaga 
+              stabilitas harga dan barometer perkembangan peternakan sapi di wilayah Minahasa. 
+              Keberadaannya turut mendorong pertumbuhan ekonomi lokal dengan menciptakan lapangan 
+              kerja dan peluang usaha bagi masyarakat sekitar.
+            </p>
+          </div>
+        </div>
+
+        {/* Operational Info - Improved Flow */}
+        <div className="bg-white/70 backdrop-blur-md border rounded-2xl shadow-lg p-6 mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-red-700 mb-6">Tata Kelola & Aktivitas Pasar</h2>
+          
+          <div className="space-y-6 text-gray-700 leading-relaxed text-sm sm:text-base">
+            <p>
+              Dikelola secara profesional oleh Dinas Pasar Kecamatan Kawangkoan, Pasar Blante Uner Satu 
+              menawarkan pengalaman berbelanja yang unik dengan fokus pada perdagangan ternak sapi. 
+              Berbagai varietas sapi diperdagangkan di sini, dengan sapi peranakan onggole sebagai 
+              yang paling dominan. Untuk menjaga kelestarian populasi ternak lokal, diterapkan 
+              kebijakan khusus dimana sapi betina hanya boleh diperdagangkan dalam wilayah Kawangkoan.
+            </p>
+
+            <p>
+              Aktivitas pasar berlangsung setiap Kamis pagi, menciptakan suasana yang hidup dan 
+              dinamis. Proses tawar-menawar berlangsung transparan, diakhiri dengan kesepakatan 
+              yang ditandai jabat tangan - simbol kepercayaan yang telah menjadi tradisi turun-temurun. 
+              Sistem ini tidak hanya memfasilitasi transaksi ekonomi, tetapi juga memperkuat 
+              hubungan sosial antar pedagang dan pembeli.
+            </p>
+
+            <p>
+              Selain sebagai pusat perdagangan ternak, Pasar Blante juga menjadi sumber penghidupan 
+              bagi masyarakat sekitar. Berbagai usaha pendukung tumbuh di sekitarnya, mulai dari 
+              penjualan perlengkapan ternak, jasa perawatan hewan, hingga warung makan yang 
+              melayani pengunjung pasar. Dampak ekonomi yang diciptakan menjadikan pasar ini 
+              sebagai penggerak penting perekonomian lokal di Kawangkoan.
+            </p>
+          </div>
+        </div>
 
         {/* Combined Gallery Section */}
         <div className="bg-white/70 backdrop-blur-md border rounded-2xl shadow-lg p-6">
@@ -143,7 +198,6 @@ export default function PasarPage() {
 
                   {/* Share Buttons inside Modal */}
                   <div className="mt-6 flex justify-center gap-4">
-                    {/* WhatsApp Share */}
                     <button
                       onClick={() =>
                         window.open(
@@ -161,7 +215,6 @@ export default function PasarPage() {
                       WhatsApp
                     </button>
 
-                    {/* Facebook Share */}
                     <button
                       onClick={() =>
                         window.open(
@@ -203,8 +256,8 @@ export default function PasarPage() {
           </div>
         )}
 
-        {/* More Info */}
-        <div className="mt-12">
+        {/* Location & Share Section */}
+        <div className="mt-12 bg-white/70 backdrop-blur-md border rounded-2xl shadow-lg p-6">
           <h2 className="text-xl sm:text-2xl font-bold text-red-700 mb-4">
             Lokasi & Jam Operasi
           </h2>
@@ -226,7 +279,6 @@ export default function PasarPage() {
 
           {/* Share Section */}
           <div className="mt-6 flex gap-4">
-            {/* WhatsApp Share */}
             <button
               onClick={() =>
                 window.open(
@@ -244,13 +296,10 @@ export default function PasarPage() {
               WhatsApp
             </button>
 
-            {/* Facebook Share */}
             <button
               onClick={() =>
                 window.open(
-                  `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                    shareLink
-                  )}`,
+                  `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink)}`,
                   "_blank"
                 )
               }

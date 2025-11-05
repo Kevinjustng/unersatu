@@ -373,14 +373,16 @@ export default function TentangKamiPage() {
               onClick={() => setShowTeamGallery(true)}
             >
               <div className="flex flex-col md:flex-row items-center gap-6">
-                <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-red-200">
-                  <Image
-                    src="/images/us2.jpeg"
-                    alt="Team KKT 144"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+  <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-red-200 bg-white">
+    <Image
+      src="/images/logo_unsrat.jpeg"
+      alt="Team KKT 144"
+      fill
+      className="object-contain p-2"
+      sizes="96px"
+      priority
+    />
+  </div>
                 <div className="text-center md:text-left">
                   <h3 className="text-2xl font-bold text-red-700 mb-2">
                     Perkenalkan Team Kami!

@@ -20,7 +20,7 @@ export default function Kontak() {
   const latitude = 1.2032256;
   const longitude = 124.7907823;
 
-  const whatsappUrl = "https://wa.me/6281234567890";
+  const whatsappUrl = "https://wa.me/6285298337397";
   const email = "unersatu@gmail.com";
 
   const facebookShare = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
@@ -114,7 +114,7 @@ export default function Kontak() {
                   rel="noopener noreferrer"
                   className="hover:text-green-600 transition"
                 >
-                  WhatsApp: +62 812-3456-7890
+                  WhatsApp: +62 852-9833-7397
                 </a>
               </div>
 
